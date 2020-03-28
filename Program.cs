@@ -1,4 +1,5 @@
 ﻿using System;
+using introduction_to_algorithms.src.algorithms;
 
 namespace introduction_to_algorithms
 {
@@ -6,7 +7,8 @@ namespace introduction_to_algorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var input = args[0];
+            System.Console.WriteLine(FibonacciRecursive.Fibonacci(int.Parse(input)));
         }
     }
 }
